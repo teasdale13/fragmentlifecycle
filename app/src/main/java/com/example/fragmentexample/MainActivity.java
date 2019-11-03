@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.button2 :
                 SecondFragment secondFragment = new SecondFragment();
+                // Le R.id.fragment représente la "boite" déclarée dans le XML qui accueillera le/les fragment(s)
                 getSupportFragmentManager().beginTransaction().replace( R.id.fragment, secondFragment ).commit();
                 break;
             case R.id.button :
